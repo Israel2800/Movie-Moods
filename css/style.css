@@ -3,15 +3,32 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+body.cover-image {
     background-image: url("../images/3000.jpeg"); /* https://storage.googleapis.com/afs-prod/media/e53811360eed4b8ba26b5f635d703a7c/3000.jpeg */
+    width: 100%;
+    height: auto;
+    background-size: cover;
 }
 
+body.black {
+    background-color: #F0F0F0;
+}
+.color-dark-dark-grey {
+    color: #383838;
+}
+.color-lt-grey {
+	color: #F0F0F0;
+}
+.color-grey {
+	color: #686868;
+}
+.color-med-grey {
+	color: #484848;
+}
 h1 {
     color: #f44336;
 }
-
-h2, h3, p {
+.white-text {
     color: white;
 }
 
@@ -46,4 +63,30 @@ h3 {
     width: 50%;
     text-align: center;
     padding-top: 20%;
+}
+
+.genre-selector-box {
+    background-color:white;
+    width: auto;
+    height: auto;
+    box-sizing:border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin: 35px;
+}
+
+.genre-selector-button {
+    background-color: #f0f0f0;
+    font-size: 20px;
+    width: 150px;
+    padding: 15px 32px;
+    margin: 15px;
+}
+.genre-selector-button:hover {
+    background-color:#f44336;
 }
