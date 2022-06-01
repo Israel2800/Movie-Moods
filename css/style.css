@@ -64,7 +64,12 @@ h3 {
     text-align: center;
     padding-top: 20%;
 }
-
+.page-narrow {
+    width: 50%;
+}
+.page-wide {
+    width: 90%;
+}
 .genre-selector-box {
     background-color:white;
     width: auto;
@@ -89,4 +94,26 @@ h3 {
 }
 .genre-selector-button:hover {
     background-color:#f44336;
+}
+.movie-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.movie-selection-box {
+    background-color: white;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+}
+.movie-poster {
+    width: 300px;
+    padding: 3px;
+}
+.movie-trailer {
+    padding: 3px;
+}
+.movie-description-box {
+    text-align: left;
 }
