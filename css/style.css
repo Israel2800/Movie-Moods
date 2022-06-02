@@ -13,6 +13,9 @@ body.cover-image {
 body.black {
     background-color: #F0F0F0;
 }
+body.dark-grey {
+    background-color: #383838;
+}
 .color-dark-dark-grey {
     color: #383838;
 }
@@ -103,9 +106,17 @@ h3 {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-end;
+}
+.flex-container.genre {
     padding: 15px;
 }
-
+.flex-container.movie {
+    padding: 0px;
+}
+.flex-container.genre-small {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 .genre-selector-button {
     background-color: #f0f0f0;
     font-size: 20px;
@@ -179,13 +190,6 @@ h3 {
     background-image: url("../images/i-am-jonas/i-am-jonas-netflix-review.webp");
 }
 
-
-.movie-flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
 .movie-selection-box {
     background-color: white;
     width: auto;
@@ -193,12 +197,45 @@ h3 {
     box-sizing: border-box;
 }
 .movie-poster {
+    height: 472px;
     width: 300px;
-    padding: 3px;
+    padding-right: 3px;
 }
 .movie-trailer {
-    padding: 3px;
+    height: 472px;
+    width: auto;
+}
+.movie-genre-button {
+    background-color: #f0f0f0;
+    font-size: 15px;
+    width: 75px;
+    text-align: center;
+    border-radius: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 5px;
 }
 .movie-description-box {
     text-align: left;
+    width: 600px;
+    padding-left: 15px;
+}
+.movie-title {
+    font-size: 45px;
+}
+.movie-subtitle {
+    font-size: 15px;
+}
+.movie-leads-heading {
+    font-size: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.movie-description {
+    font-size: 18px;
+}
+.movie-leads {
+    font-size: 18px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
