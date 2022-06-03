@@ -6,16 +6,46 @@
 
     <title>Team Project 1</title>
 
+    <link rel="stylesheet" href="./tailwind/output.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
-<body>
+<body class="black">
     <div class="logo">
         <h1>FeelingFlix</h1>
     </div>
 
-    
+    <main class="center page-narrow">
+
+        <!-- Mood Selector -->
+        <div class="genre-selector-box">
+            <h2>What are you in the mood for?</h2>
+            <hr class="genre-selector-title-rule">
+            <br>
+            
+            <!-- Genre Button Container -->
+            <div class="flex-container">
+                <a href="select-a-humorous-genre.html">
+                    <button class="genre-selector-button" type="button">Humorous</button>
+                </a>
+                <a href="select-an-emotional-genre.html">
+                    <button class="genre-selector-button" type="button">Emotional</button>
+                </a>
+                <a href="select-an-intellectual-genre.html">
+                    <button class="genre-selector-button" type="button">Intellectual</button>
+                </a>
+                <a href="select-a-scared-genre.html">
+                    <button class="genre-selector-button" type="button">Scared</button>
+                </a>
+                <a href="select-an-informed-genre.html">
+                    <button class="genre-selector-button" type="button">Informed</button>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
 
 </body>
 </html>
