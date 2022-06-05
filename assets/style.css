@@ -573,7 +573,8 @@ h3 {
     margin: 10px;
     transition-duration: 0.3s;
 }
-.movie-recommendation-button.movie-one {
+
+/* .movie-recommendation-button.movie-one {
     background-image: url("../images/big-night/big-night.jpeg")
 }
 .movie-recommendation-button.movie-one:hover {
@@ -609,7 +610,7 @@ h3 {
 .movie-recommendation-button.movie-six:hover {
     background-image: url("../images/i-am-jonas/i-am-jonas-netflix-review.webp");
 }
-
+ */
 .movie-selection-box {
     background-color: white;
     width: auto;
