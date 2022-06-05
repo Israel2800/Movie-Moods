@@ -1,49 +1,3 @@
-<<<<<<< HEAD
-const movieSearchBox = document.getElementById('movie-search-box');
-const searchList = document.getElementById('search-list');
-const resultGrid = document.getElementById('result-grid');
-const start_btn = document.querySelector(".start_btn button");
-const search_container = document.querySelector(".search-container");
-const start_btn1 = document.querySelector(".start_btn1 button");
-const recentSearch = document.querySelector(".rs");
-const container_2 = document.querySelector(".container2");
-
-// if Search Movie button clicked
-start_btn.onclick = ()=>{
-    search_container.classList.add("search-element"); //show info box
-    recentSearch.classList.add("container-rs");
-    start_btn.style.display = 'none'; // Hide button
-    start_btn1.style.display = 'none'; // Hide button        
-}
-
-start_btn1.onclick = ()=>{
-    container_2.classList.add("start-question"); //show info box
-
-    start_btn1.style.display = 'none'; // Hide button
-    start_btn.style.display = 'none'; // Hide button
-}
-
-// function showHide() {
-//     if (document.getElementById('search-element').value=='1') {
-//         document.getElementById('search-element').style.visibility='block';
-//     }
-//     else{
-//         document.getElementById('search-element').style.visibility='none';
-//     }
-// }
-
-
-// start_btn.addEventListener('click', () => {
-//     start_btn.style.display = 'none';
-// }); // Hide button when it got click it.
-
-// exit_btn.onclick = ()=>{
-//     info_box.classList.remove("activeInfo"); //hide info box
-// }
-
-
-// load movies from API
-=======
 // Movie information file
 // Titles: https://omdbapi.com/?s=thor&page=1&apikey=fc1fef96
 // details: http://www.omdbapi.com/?i=tt3896198&apikey=fc1fef96
@@ -53,7 +7,6 @@ const searchList = document.getElementById('search-list');
 const resultGrid = document.getElementById('result-grid');
 
 // Load movies from API
->>>>>>> c00393179886e4461749f86f76d39265c08123f2
 async function loadMovies(searchTerm){
     const URL = `https://omdbapi.com/?s=${searchTerm}&page=1&apikey=fc1fef96`;
     const res = await fetch(`${URL}`);
@@ -97,74 +50,6 @@ function displayMovieList(movies){
     loadMovieDetails();
 }
 
-<<<<<<< HEAD
-$(document).ready(function() {
-   
-    // On click listener to search a Movie
-    $("#form-control").on("#click", "search-list", function(){
-        var movie = $(this).text();
-        getMovie(movie);
-        gitMovie(movie);
-        addToRecentSearches(movie);
-    })
-
-    // Hide elements til item is searched
-    $("#form-control")
-
-    // Load Recent Searches from the local Storage
-    getRecentSearches();
-
-    var movies = [];
-
-    function addToRecentSearches(movie) {
-        $("#form-control").show();
-
-        // Create Element
-        var newMovie = $("<li>");
-        newMovie.addClass("search-list");
-        newMovie.text(movie);
-        // Append to List
-        $("#form-control-list").prepend(newMovie);
-    
-        var movieObj = {
-            movie: movie
-        };
-    
-        movies.push(movieObj);
-    
-        // Save to localStorage with JSON
-        localStorage.setItem("searches", JSON.stringify(movies));        
-    }
-
-    // Get the Recent Movie Searches
-    function getRecentSearches() {
-        var searches = JSON.parse(localStorage.getItem("searches"));
-        if (searches != null) {
-          for (var i = 0; i < searches.length; i++) {
-            // Create Element
-            var newMovie = $("<li>");
-            newMovie.addClass("search-list");
-            newMovie.text(searches[i].movie);
-            // Append to List
-            $("#search-list").prepend(newMovie);
-          }
-          $("#form-control").show();
-        } else {
-          $("#form-control").hide();
-        }
-      }
-
-    
-});
-
-//This clears the previous searches when user clicks on clear history button.
-$(".clear").on("click", function() {
-    localStorage.clear();
-    $("#form-control").empty();
-});
-
-=======
->>>>>>> c00393179886e4461749f86f76d39265c08123f2
 function loadMovieDetails(){
     const searchListMovies = searchList.querySelectorAll('.search-list-item');
     searchListMovies.forEach(movie => {
@@ -192,18 +77,10 @@ function displayMovieDetails(details){
             <li class = "rated">Ratings: ${details.Rated}</li>
             <li class = "released">Released: ${details.Released}</li>
         </ul>
-<<<<<<< HEAD
-        <p class = "plot"><b>Description:</b> ${details.Plot}</p>
-
-        <p class = "writer"><b>Writer:</b> ${details.Writer}</p>
-        <p class = "actors"><b>Actors: </b>${details.Actors}</p>
-        <p class = "genre"><b>Genre:</b> ${details.Genre}</p>
-=======
         <p class = "genre"><b>Genre:</b> ${details.Genre}</p>
         <p class = "writer"><b>Writer:</b> ${details.Writer}</p>
         <p class = "actors"><b>Actors: </b>${details.Actors}</p>
         <p class = "plot"><b>Plot:</b> ${details.Plot}</p>
->>>>>>> c00393179886e4461749f86f76d39265c08123f2
         <p class = "language"><b>Language:</b> ${details.Language}</p>
         <p class = "awards"><b><i class = "fas fa-award"></i></b> ${details.Awards}</p>
     </div>
@@ -215,20 +92,4 @@ window.addEventListener('click', (event) => {
     if(event.target.className != "form-control"){
         searchList.classList.add('hide-search-list');
     }
-<<<<<<< HEAD
 });
-
-// window.addEventListener('input', (event) => {
-//     if(event.target.className != "search-container"){
-//         search_container.classList.add('hide-search-container');
-//     }
-// });
-
-// window.addEventListener('click', (event) => {
-//     if(event.target.className != "form-control"){
-//        search_container.classList.add('hide-search-container');
-//     }
-// });
-=======
-});
->>>>>>> c00393179886e4461749f86f76d39265c08123f2
