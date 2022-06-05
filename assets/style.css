@@ -12,9 +12,7 @@
     margin: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    /* background-image: url("images/3000.jpeg"); https://storage.googleapis.com/afs-prod/media/e53811360eed4b8ba26b5f635d703a7c/3000.jpeg */
     
-    background-size: cover;
     
 }
 
@@ -93,6 +91,10 @@ img{
 .wrapper{
     min-height: 100vh;
     background-color: var(--dark-color);
+    background-image: url("images/3000.jpeg");/* https://storage.googleapis.com/afs-prod/media/e53811360eed4b8ba26b5f635d703a7c/3000.jpeg */
+    background-size: cover;
+    opacity: 1;
+
 }
 
 .wrapper .container{
@@ -102,7 +104,7 @@ img{
 }
 
 .search-container{
-    background-color: var(--md-dark-color);
+    /* background-color: var(--md-dark-color); */
     height: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -573,7 +575,8 @@ h3 {
     margin: 10px;
     transition-duration: 0.3s;
 }
-.movie-recommendation-button.movie-one {
+
+/* .movie-recommendation-button.movie-one {
     background-image: url("../images/big-night/big-night.jpeg")
 }
 .movie-recommendation-button.movie-one:hover {
@@ -609,7 +612,7 @@ h3 {
 .movie-recommendation-button.movie-six:hover {
     background-image: url("../images/i-am-jonas/i-am-jonas-netflix-review.webp");
 }
-
+ */
 .movie-selection-box {
     background-color: white;
     width: auto;
@@ -698,4 +701,29 @@ h3 {
                 flex-direction: column;
         position: relative;
         padding: 20px;
+}
+/*Mood-Change Style here for tags*/
+#tags{
+    width:80%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+/*Mood-Change Style here for tags*/
+.tag{
+    color:white;
+    padding:10px 20px;
+    background-color: orange;
+    border-radius: 50px;
+    margin:5px;
+    display:inline-block;
+    cursor: pointer;
+}
+
+/*Highlights the tags red when clicked*/
+.tag.highlight{
+    background-color: red;
 }
