@@ -698,4 +698,28 @@ h3 {
                 flex-direction: column;
         position: relative;
         padding: 20px;
+/*Mood-Change Style here for tags*/
+#tags{
+    width:80%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+/*Mood-Change Style here for tags*/
+.tag{
+    color:white;
+    padding:10px 20px;
+    background-color: orange;
+    border-radius: 50px;
+    margin:5px;
+    display:inline-block;
+    cursor: pointer;
+}
+
+/*Highlights the tags red when clicked*/
+.tag.highlight{
+    background-color: red;
 }
