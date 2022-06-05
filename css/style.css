@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 :root{
@@ -442,6 +443,31 @@ body.dark-grey {
 .color-med-grey {
 	color: #484848;
 }
+=======
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body.black {
+    background-color: #F0F0F0;
+}
+body.dark-grey {
+    background-color: #383838;
+}
+.color-dark-dark-grey {
+    color: #383838;
+}
+.color-lt-grey {
+	color: #F0F0F0;
+}
+.color-grey {
+	color: #686868;
+}
+.color-med-grey {
+	color: #484848;
+}
+>>>>>>> c00393179886e4461749f86f76d39265c08123f2
 h1 {
     color: #f44336;
 }
@@ -474,16 +500,21 @@ h3 {
     display: inline-block;
     font-size: 16px;
 }
-
 .center {
-    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
-    text-align: center;
-    padding-top: 20%;
-}
+  }
 .page-narrow {
     width: 60%;
 }
+<<<<<<< HEAD
+.page-narrow {
+    width: 60%;
+}
+=======
+>>>>>>> c00393179886e4461749f86f76d39265c08123f2
 .page-wide {
     width: 90%;
 }
@@ -652,6 +683,7 @@ h3 {
     font-size: 18px;
     padding-top: 7px;
     padding-bottom: 7px;
+<<<<<<< HEAD
 }
 
 .container2 {
@@ -693,3 +725,28 @@ h3 {
         position: relative;
         padding: 20px;
 }
+=======
+} 
+
+/* sets base style for each page */
+html {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+    
+    /* set background image per page */
+    .whatsmoood-bg {
+    background: url(../images/posters2.jpg) no-repeat center center fixed;
+    }
+    .index-bg {
+    background: url(../images/posters1.jpg) no-repeat center center fixed;
+    }
+    .selection-bg {
+    background: url(../images/posters3.jpg) no-repeat center center fixed;
+    }           
+    .suggestions-bg {
+        background: url(../images/theater.jpg) no-repeat center center fixed;
+        }          
+>>>>>>> c00393179886e4461749f86f76d39265c08123f2

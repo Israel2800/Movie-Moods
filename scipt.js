@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const movieSearchBox = document.getElementById('movie-search-box');
 const searchList = document.getElementById('search-list');
 const resultGrid = document.getElementById('result-grid');
@@ -42,6 +43,17 @@ start_btn1.onclick = ()=>{
 
 
 // load movies from API
+=======
+// Movie information file
+// Titles: https://omdbapi.com/?s=thor&page=1&apikey=fc1fef96
+// details: http://www.omdbapi.com/?i=tt3896198&apikey=fc1fef96
+
+const movieSearchBox = document.getElementById('movie-search-box');
+const searchList = document.getElementById('search-list');
+const resultGrid = document.getElementById('result-grid');
+
+// Load movies from API
+>>>>>>> c00393179886e4461749f86f76d39265c08123f2
 async function loadMovies(searchTerm){
     const URL = `https://omdbapi.com/?s=${searchTerm}&page=1&apikey=fc1fef96`;
     const res = await fetch(`${URL}`);
@@ -85,6 +97,7 @@ function displayMovieList(movies){
     loadMovieDetails();
 }
 
+<<<<<<< HEAD
 $(document).ready(function() {
    
     // On click listener to search a Movie
@@ -150,6 +163,8 @@ $(".clear").on("click", function() {
     $("#form-control").empty();
 });
 
+=======
+>>>>>>> c00393179886e4461749f86f76d39265c08123f2
 function loadMovieDetails(){
     const searchListMovies = searchList.querySelectorAll('.search-list-item');
     searchListMovies.forEach(movie => {
@@ -177,11 +192,18 @@ function displayMovieDetails(details){
             <li class = "rated">Ratings: ${details.Rated}</li>
             <li class = "released">Released: ${details.Released}</li>
         </ul>
+<<<<<<< HEAD
         <p class = "plot"><b>Description:</b> ${details.Plot}</p>
 
         <p class = "writer"><b>Writer:</b> ${details.Writer}</p>
         <p class = "actors"><b>Actors: </b>${details.Actors}</p>
         <p class = "genre"><b>Genre:</b> ${details.Genre}</p>
+=======
+        <p class = "genre"><b>Genre:</b> ${details.Genre}</p>
+        <p class = "writer"><b>Writer:</b> ${details.Writer}</p>
+        <p class = "actors"><b>Actors: </b>${details.Actors}</p>
+        <p class = "plot"><b>Plot:</b> ${details.Plot}</p>
+>>>>>>> c00393179886e4461749f86f76d39265c08123f2
         <p class = "language"><b>Language:</b> ${details.Language}</p>
         <p class = "awards"><b><i class = "fas fa-award"></i></b> ${details.Awards}</p>
     </div>
@@ -193,6 +215,7 @@ window.addEventListener('click', (event) => {
     if(event.target.className != "form-control"){
         searchList.classList.add('hide-search-list');
     }
+<<<<<<< HEAD
 });
 
 // window.addEventListener('input', (event) => {
@@ -206,3 +229,6 @@ window.addEventListener('click', (event) => {
 //        search_container.classList.add('hide-search-container');
 //     }
 // });
+=======
+});
+>>>>>>> c00393179886e4461749f86f76d39265c08123f2
