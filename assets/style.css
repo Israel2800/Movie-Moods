@@ -105,7 +105,7 @@ img{
 .wrapper{
     min-height: 100vh;
     background-color: var(--dark-color);
-    background-image: url("images/3000.jpeg");/* https://storage.googleapis.com/afs-prod/media/e53811360eed4b8ba26b5f635d703a7c/3000.jpeg */
+    background-image: url("images/3000-65-hr-opacity.jpg");/* https://storage.googleapis.com/afs-prod/media/e53811360eed4b8ba26b5f635d703a7c/3000.jpeg */
     background-size: cover;
     opacity: 1;
 
@@ -464,7 +464,6 @@ img{
         padding: 3rem 0;
     }
 }
-
 
 
 /* GORDON PART */
