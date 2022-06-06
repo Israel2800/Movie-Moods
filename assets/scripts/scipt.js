@@ -6,6 +6,7 @@ const search_container = document.querySelector(".search-container");
 const start_btn1 = document.querySelector(".start_btn1 button");
 const recentSearch = document.querySelector(".rs");
 const container_2 = document.querySelector(".container2");
+const container_3 = document.querySelector(".container3");
 
 // if Search Movie button clicked
 start_btn.onclick = ()=>{
@@ -16,8 +17,8 @@ start_btn.onclick = ()=>{
 }
 
 start_btn1.onclick = ()=>{
-    container_2.classList.add("start-question"); //show info box
-
+    // container_2.classList.add("start-question"); //show info box
+    container_3.classList.add("cover-img")
     start_btn1.style.display = 'none'; // Hide button
     start_btn.style.display = 'none'; // Hide button
 }

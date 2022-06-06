@@ -468,12 +468,7 @@ img{
 
 /* GORDON PART */
 
-body.cover-image {
-    background-image: url("images/3000.jpeg"); /* https://storage.googleapis.com/afs-prod/media/e53811360eed4b8ba26b5f635d703a7c/3000.jpeg */
-    width: 100%;
-    height: auto;
-    background-size: cover;
-}
+
 
 body.black {
     background-color: #F0F0F0;
@@ -770,4 +765,8 @@ h3 {
 /*Highlights the tags red when clicked*/
 .tag.highlight{
     background-color: red;
+}
+
+.container3{
+    display: none;
 }
