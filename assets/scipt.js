@@ -6,6 +6,8 @@ const search_container = document.querySelector(".search-container");
 const start_btn1 = document.querySelector(".start_btn1 button");
 const recentSearch = document.querySelector(".rs");
 const container_2 = document.querySelector(".container2");
+const container_3 = document.querySelector(".container3");
+const container_4 = document.querySelector(".container4");
 
 // if Search Movie button clicked
 start_btn.onclick = ()=>{
@@ -16,8 +18,8 @@ start_btn.onclick = ()=>{
 }
 
 start_btn1.onclick = ()=>{
-    container_2.classList.add("start-question"); //show info box
-
+    // container_2.classList.add("start-question"); //show info box
+    container_4.classList.add("black")
     start_btn1.style.display = 'none'; // Hide button
     start_btn.style.display = 'none'; // Hide button
 }
@@ -43,7 +45,7 @@ start_btn1.onclick = ()=>{
 
 // load movies from API
 async function loadMovies(searchTerm){
-    const URL = `https://omdbapi.com/?s=${searchTerm}&page=1&apikey=fc1fef96`;
+    const URL = `https://omdbapi.com/?s=${searchTerm}&page=1&apikey=313812bb`;
     const res = await fetch(`${URL}`);
     const data = await res.json();
     // console.log(data.Search);

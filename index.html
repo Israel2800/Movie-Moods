@@ -10,6 +10,7 @@
     <!-- font awesome icons cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- custom css -->
+<<<<<<< HEAD
     <link rel="stylesheet" href="./tailwind/output.css">
 =======
     <meta charset="utf-8">
@@ -22,18 +23,35 @@
     <link rel="stylesheet" href="css/html.css">
 
  
+=======
+    <link rel="stylesheet" href="assets/tailwind/output.css">
+    <link rel="stylesheet" href="css/html.css">
+    <link rel="whats-your-mood" href="whats-your-mood.html" class="rel">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+>>>>>>> d92c3156951e79ac4cefd2380f9e5965ad92ddc2
 </head>
 <<<<<<< HEAD
 <body>
 
-    <div class="start_btn"><button>Movie Searcher</button></div>
-    <div class="start_btn1"><button>Movie Recommendation</button></div>
-    
+    <div class="buttons-box">
+        <div class="start_btn"><button>Movie Searcher</button></div>
+        <a href="whats-your-mood.html"><div class="start_btn1"><button>Movie Recommendation</button></div></a>
+    </div>
     <div class = "wrapper">
         <!-- logo -->
         <div class = "logo">
             <div class = "container">
+<<<<<<< HEAD
                 <p><span>Movie Mood</span></p>
+=======
+                <p><span>
+                    <a href="index.html">
+                    <img src="assets/images/mmmarquee.png" class="w-1/3 center h-1/3" alt="MM logo"/>
+                    </a>
+                </span></p>
+>>>>>>> d92c3156951e79ac4cefd2380f9e5965ad92ddc2
             </div>
         </div>
         <!-- end of logo -->
@@ -96,31 +114,219 @@
                 <button class="clear">Clear History</button>
             </div>
         </div>
+<<<<<<< HEAD
 =======
 >>>>>>> df143466c90f867a3a1e2b39131ba0fe4324ef14
+=======
 
 
- <img src="./images/mmmarquee.png" class="w-1/3 center h-1/3" alt="MM logo"/>
+    <!-- </div> -->
 
-<body class="cover-image">
 
-    <div>
-        <main class="pb-8 center mt-11">
+    <!-- GORDON PART -->
+    <div class="container2">  
+        <main class="center page-narrow">
+            <div class="question-start">
+                <div id="start" class="col-md-12 text-center m-2 align-middle">
+                    <h1>Movie Moods</h1>
+                    <span>Start and know what movies we will recomend you!</span>
+                    <br>
+                    <button type="button" class="btn btn-success btn-lg m-3" id="startBtn">Start Movie Moode</button>
+                </div>
 
-           
-                <img class="border-2 border-red-700" src="images/curtainintro2.jpg" alt="red curtain with welcome text" />
-     
 
-         </div>
+                <div class="start-question" id="quiz" style="display: none;">
+
+                    <!-- Mood Selector -->
+                    <div id = "title"></div>
+                    <!-- <div class="genre-selector-box">
+                        <h2>What are you in the mood for?</h2>
+                        <hr class="genre-selector-title-rule">
+                        <br>
+                        
+                        Genre Button Container 
+                        <div class="flex-container">
+                            <a href="#humorous">
+                                <button class="genre-selector-button" type="button">Humorous</button>
+                            </a>
+                            <a href="#emotional">
+                                <button class="genre-selector-button" type="button">Emotional</button>
+                            </a>
+                            <a href="#intellectual">
+                                <button class="genre-selector-button" type="button">Intellectual</button>
+                            </a>
+                            <a href="#scared">
+                                <button class="genre-selector-button" type="button">Scared</button>
+                            </a>
+                            <a href="#informed">
+                                <button class="genre-selector-button" type="button">Informed</button>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+                <br><br><br>
+
+                <!-- Genre Selector for Mood = Humorous -->
+                <div id="humorous">
+                <div class="genre-selector-box">
+                    <h2>Select a Humorous Genre</h2>
+                    <hr class="genre-selector-title-rule short">
+                    <br>
+
+                    <!-- Genre Selector Buttons -->
+                    <div class="flex-container genre">
+                        <a href="#">
+                            <button class="genre-selector-button" type="button">Comedy</button>
+                        </a>
+                        <a href="#">
+                            <button class="genre-selector-button" type="button">Action</button>
+                        </a>
+                        <a href="#">
+                            <button class="genre-selector-button" type="button">RomCom</button>
+                        </a>
+                    </div>
+                </div>
+                </div>  
+                <br><br><br>
+
+                <!-- Genre Selector for Mood = Emotional -->
+                <div id="emotional">
+                <div class="genre-selector-box">
+                    <h2>Select a Emotional Genre</h2>
+                    <hr class="genre-selector-title-rule short">
+                    <br>
+
+                    <!-- Genre Selector Buttons -->
+                    <div class="flex-container">
+                        <a href="#">
+                            <button class="genre-selector-button" type="button">Drama</button>
+                        </a>
+                        <a href="#">
+                            <button class="genre-selector-button" type="button">Crime</button>
+                        </a>
+                        <a href="#">
+                            <button class="genre-selector-button" type="button">RomCom</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+                <br><br><br>
+
+                <!-- Genre Selector for Mood = Intellectual -->
+                <div id="intellectual">
+                <div class="genre-selector-box">
+                    <h2>Select an Intellectual Genre</h2>
+                    <hr class="genre-selector-title-rule short">
+                    <br>
+
+                    <!-- Genre Selector Buttons -->
+                    <div class="flex-container">
+                        <a href="#">
+                            <button class="genre-selector-button" type="button">Independent</button>
+                        </a>
+                        <a href="#">
+                            <button class="genre-selector-button" type="button">Thriller</button>
+                        </a>
+                        <a href="#">
+                            <button class="genre-selector-button" type="button">Sci-Fi</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+                <br><br><br>
+
+                <!-- Genre Selector for Mood = Scared -->
+                <div id="scared">
+                <div class="genre-selector-box">
+                    <h2>Select a Scared Genre</h2>
+                    <hr class="genre-selector-title-rule short">
+                    <br>
+
+                    <!-- Genre Selector Buttons -->
+                    <div class="flex-container">
+                        <a href="#">
+                            <button class="genre-selector-button" type="button">Horror</button>
+                        </a>
+                        <a href="#">
+                            <button class="genre-selector-button" type="button">Drama</button>
+                        </a>
+                        <a href="#">
+                            <button class="genre-selector-button" type="button">Thriller</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+                <br><br><br>
+
+                <!-- Genre Selector for Mood = Informed -->
+                <div id="informed">
+                <div class="genre-selector-box">
+                    <h2>Select an Informed Genre</h2>
+                    <hr class="genre-selector-title-rule">
+                    <br>
+
+                    <!-- Genre Selector Buttons -->
+                    <div class="flex-container">
+                        <a href="#">
+                            <button class="genre-selector-button" type="button">Documentary</button>
+                        </a>
+                        <a href="#">
+                            <button class="genre-selector-button" type="button">Foreign</button>
+                        </a>
+                        <a href="#">    
+                            <button class="genre-selector-button" type="button">Placeholder</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+                <br><br><br>
+
+                <!-- Here are five recommendations -->
+                <div class="movie-recommendation-box">
+                    <h2>Here are five recommendations!</h2>
+                    <hr class="genre-selector-title-rule short">
+                    <br>
+
+                    <!-- Recommendations Buttons -->
+                    <div class="flex-container">
+                        <a href="selection.html">
+                            <button class="movie-recommendation-button movie-one" type="button">Big Night (1996)</button>
+                        </a>
+                        <a href="selection.html">
+                            <button class="movie-recommendation-button movie-two" type="button">Blaze (2018)</button>
+                        </a>
+                        <a href="selection.html">
+                            <button class="movie-recommendation-button movie-three" type="button">Bright Star (2009)</button>
+                        </a>
+                        <a href="selection.html">
+                            <button class="movie-recommendation-button movie-four" type="button">I Am Love (2009)</button>
+                        </a>
+                        <a href="selection.html">
+                            <button class="movie-recommendation-button movie-five" type="button">Cold War (2018)</button>
+                        </a>
+                        <a href="selection.html">
+                            <button class="movie-recommendation-button movie-six" type="button">I Am Jonas (2018)</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </main>
-    
-        <div class="shadow-sm center">
-            <a id=link href="whats-your-mood.html" class="w-full h-40 mt-6 rounded center"><img src="images/getstarted.png" width="400" height="260" 
-               onmouseover="this.src='images/getstartedhover.png'"
-               onmouseout="this.src='images/getstarted.png'"/>
-           </A>
-           </div>
+    </div>
+
+    </div>
+
+    <!-- movie app js -->
+    <script src = "assets/scipt.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+ 
+</head>
+>>>>>>> d92c3156951e79ac4cefd2380f9e5965ad92ddc2
+
+
 
 </body>
+</div>
 
 </html>
