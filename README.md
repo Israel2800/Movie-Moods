@@ -1,8 +1,7 @@
 # Movie Moods
 
 ## Purpose
-This website is designed for all users who want to know details about a specific movie, just like the year of creation, the ratings, a description, the writers, the actors, the genre and also a cool poster of the movie!
-We also provide you some options if you do not know what to watch, we offer you a variety of genre options that you can choose and we will show you a huge poster with a specific random movie that you could love.
+This website is designed for all the users who want to know details about a specific movie such as the year of creation, ratings, a description, the writers, the actors, the genre, and also a cool movie poster. We also give you a few options if you don't know what to watch, we give you a variety of genre options you can choose from, and also a great poster will be displayed with a specific random movie that you could probably love.
 
 ## Built With
 * HTML
