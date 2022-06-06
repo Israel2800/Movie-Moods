@@ -13,8 +13,8 @@ This website is designed for all the users who want to know details about a spec
 ## Website
 https://israel2800.github.io/Team-Project-1/
 
-## GitHub Repository
-https://github.com/Israel2800/Team-Project-1
+## GitHub Repository (Team Project)
+https://github.com/GordonOrr/Team-Project-1 
 
 ## Screenshots
 ![Screenshot of the web application when you open it, you will see main menu of the movie searcher.](assets/images/screenshot-1.png)
