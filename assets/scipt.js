@@ -45,7 +45,7 @@ start_btn1.onclick = ()=>{
 
 // load movies from API
 async function loadMovies(searchTerm){
-    const URL = `https://omdbapi.com/?s=${searchTerm}&page=1&apikey=fc1fef96`;
+    const URL = `https://omdbapi.com/?s=${searchTerm}&page=1&apikey=313812bb`;
     const res = await fetch(`${URL}`);
     const data = await res.json();
     // console.log(data.Search);
