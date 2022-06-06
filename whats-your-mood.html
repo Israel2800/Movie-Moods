@@ -6,16 +6,47 @@
 
     <title>Team Project 1</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./assets/tailwind/output.css">
+    <link rel="stylesheet" href="./assets/style.css">
 
 </head>
 
-<body>
+<body class="black">
     <div class="logo">
         <h1>FeelingFlix</h1>
     </div>
 
-    
+    <main class="center page-narrow">
+
+        <!-- Mood Selector -->
+        <div class="genre-selector-box">
+            <h2>What are you in the mood for?</h2>
+           <div id="tags"></div>
+            <hr class="genre-selector-title-rule">
+            <br>
+        </div>
+        <br><br><br>
+
+        
+
+                <!-- Here are five recommendations -->
+                <div class="movie-recommendation-box" id="main">
+                    <h2>Here are your recommendations!</h2>
+                    <hr class="genre-selector-title-rule short">
+                    <div class="page" id="prev">Previous Page</div>
+                    <div class="current" id="current">1</div>
+                    <div class="page" id="next">Next Page</div>
+                    <br>
+
+                </div>
+
+
+
+    </main>
+    <script src="./assets/mood-script.js"></script>
+
 
 </body>
 </html>
+
+
