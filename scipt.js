@@ -92,4 +92,8 @@ window.addEventListener('click', (event) => {
     if(event.target.className != "form-control"){
         searchList.classList.add('hide-search-list');
     }
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> df143466c90f867a3a1e2b39131ba0fe4324ef14
