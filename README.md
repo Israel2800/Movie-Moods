@@ -8,6 +8,7 @@ This website is designed for all the users who want to know details about a spec
 * CSS 
 * JavaScript
 * Tailwind
+* TMDB & OMDB API's
 
 ## Website
 https://israel2800.github.io/Team-Project-1/
