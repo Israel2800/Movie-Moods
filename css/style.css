@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 :root{
@@ -472,6 +473,18 @@ h1 {
     color: #f44336;
 }
 .white-text {
+=======
+/* stylesheet for css-practice exercise */
+body {
+    background-image: url("../images/3000.jpeg"); /* https://storage.googleapis.com/afs-prod/media/e53811360eed4b8ba26b5f635d703a7c/3000.jpeg */
+}
+
+h1 {
+    color: #f44336;
+}
+
+h2, h3, p {
+>>>>>>> d895eacb85af466ffdc60ca4c7088a6f7bf1bd6a
     color: white;
 }
 
@@ -500,6 +513,7 @@ h3 {
     display: inline-block;
     font-size: 16px;
 }
+<<<<<<< HEAD
 .center {
     display: block;
     margin-left: auto;
@@ -750,3 +764,12 @@ html {
         background: url(../images/theater.jpg) no-repeat center center fixed;
         }          
 >>>>>>> c00393179886e4461749f86f76d39265c08123f2
+=======
+
+.center {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding-top: 20%;
+}
+>>>>>>> d895eacb85af466ffdc60ca4c7088a6f7bf1bd6a
