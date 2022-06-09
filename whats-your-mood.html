@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+    <!-- Styling starts -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/tailwind/output.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Styling starts -->
 
     <title>Movie Recommendations</title>
 
-    <link rel="stylesheet" href="./assets/tailwind/output.css">
-    <link rel="stylesheet" href="style.css">
-
 </head>
 
+<!-- Stlying with Tailwind -->
 <body class="black">
     <div class="logo">
         <a href="index.html">
             <img src="assets/images/mmmarquee.png" class="w-1/3 center h-1/3" alt="MM logo"/>
             </a>
     </div>
+    <!-- Retun to main page starts -->
+    <nav class="navigator">
+        <a href="./index.html">Return to Main Page</a>
+    </nav>
+    <!-- Return to main page ends -->
 
     <main class="center page-narrow">
 
@@ -26,18 +33,19 @@
            <div id="tags"></div>
             <hr class="genre-selector-title-rule">
             <br>
-
         </div>
         <br><br><br>
+        <!-- Mood Slector Ends -->
 
-                <!-- Here are five recommendations -->
-                <div class="movie-recommendation-box" id="main">
-                    <h2>Here are your recommendations!</h2>
-                </div>
-
-
-
+        <!-- Recommendation Starts-->
+        <div class="movie-recommendation-box" id="main">
+            <h2>Here are your recommendations!</h2>
+        </div>
+        <!-- Recommendation Ends-->
     </main>
+
+
+    <!-- Script -->
     <script src="mood-script.js"></script>
 
 

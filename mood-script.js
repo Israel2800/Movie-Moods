@@ -1,11 +1,12 @@
-//TMDB 
-
+// API base call
 const API_KEY = 'api_key=7dc1f88fbcee0b7baf342c99904c5ac4';
 const BASE_URL = 'https://api.themoviedb.org/3';
 const API_URL = BASE_URL + '/discover/movie?sort_by=popularity.desc&'+API_KEY;
 const IMG_URL = 'https://image.tmdb.org/t/p/w500';
 const searchURL = BASE_URL + '/search/movie?'+API_KEY;
 
+
+// Genre Array
 const genres = [
     {
       "id": 28,
@@ -85,12 +86,13 @@ const genres = [
     }
   ]
 
+// const pulled from HTML 
 const main = document.getElementById('main');
 const form =  document.getElementById('form');
 const tagsEl = document.getElementById('tags');
 
 
-
+// function that pulls the data from api based on tags selected
 var selectedGenre = []
 setGenre();
 function setGenre() {
@@ -123,6 +125,7 @@ function setGenre() {
     })
 }
 
+// hightlights the tags clicked on red
 function highlightSelection() {
     const tags = document.querySelectorAll('.tag');
     tags.forEach(tag => {
@@ -138,6 +141,7 @@ function highlightSelection() {
 
 }
 
+// clears all selections to allow users to start again
 function clearBtn(){
     let clearBtn = document.getElementById('clear');
     if(clearBtn){
@@ -158,8 +162,10 @@ function clearBtn(){
     
 }
 
+// function call
 getMovies(API_URL);
 
+// fetches the url from the api 
 function getMovies(url) {
   lastUrl = url;
     fetch(url).then(res => res.json()).then(data => {
@@ -176,7 +182,7 @@ function getMovies(url) {
 
 }
 
-
+// shows the movies selected onto the webpage
 function showMovies(data) {
     main.innerHTML = '';
     data.forEach(movie => {
