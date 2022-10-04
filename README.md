@@ -11,10 +11,10 @@ This website is designed for all the users who want to know details about a spec
 * TMDB & OMDB API's
 
 ## Website
-https://israel2800.github.io/Team-Project-1/
+https://israel2800.github.io/Movie-Moods/
 
 ## GitHub Repository (Team Project)
-https://github.com/GordonOrr/Team-Project-1 
+https://github.com/Israel2800/Movie-Moods
 
 ## Screenshots
 ![Screenshot of the web application when you open it, you will see main menu of the movie searcher.](assets/images/screenshot-1.png)
